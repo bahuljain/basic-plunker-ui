@@ -1,0 +1,47 @@
+#workspace {
+    top: 3%;
+    bottom: 5%;
+}
+
+#sidebar {
+	background-color: #EEE;
+    position: absolute;
+    top: inherit;
+    bottom: inherit;
+    left: 0;
+    width: 49.75%;
+    overflow: auto;
+}
+#content {
+    position: absolute;
+    top: inherit;
+    bottom: inherit;
+    left: 50.25% /* 200 + 6*/;
+    right: 0;
+    overflow: hidden;
+    color: #FFF;
+}
+
+#top-content {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background-color: #444;
+    overflow: auto;
+}
+
+#sidebar-resizer {
+	background-color: #666;
+    position: absolute;
+    top: inherit;
+    bottom: inherit;
+    left: 49.75%;
+    width: 0.5%;
+    cursor: e-resize;
+}
+
+#sidebar-resizer:hover, #preview-resizer:hover {
+	background-color: #AAA;
+}
