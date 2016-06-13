@@ -14,24 +14,24 @@
 
   <body ng-controller="MainCtrl">
 
-  <div id="workspace">
-  	<div id="sidebar">
-  		<h3>Side navbar</h3>
-  	</div>
-  
-  	<div id="content">
-  		<div id="top-content">Top content <p>{{content}}</p></div>
-  	</div>
-  
-  	<div id="sidebar-resizer" 
-  		resizer="vertical" 
-  		resizer-width="6" 
-  		resizer-left="#sidebar" 
-  		resizer-right="#content"
-  		resizer-max="1200"
-      resizer-min="300">
-  	</div>
-  </div>
+  <div class="workspace">    
+	  	<div id="gui">
+	  		<h3>GUI</h3>
+	  	</div>
+	  
+	    <div id="gui-resizer" 
+	      resizer="vertical" 
+	      resizer-body=".workspace"
+	      resizer-left="#gui" 
+	      resizer-right="#content"
+	      resizer-max="85"
+	      resizer-min="15">
+	    </div>
+
+	    <div id="editor">
+	      <div id="top-content"><h3>Editor Here</h3></div>
+	    </div>
+	</div>
 
   </body>
 
